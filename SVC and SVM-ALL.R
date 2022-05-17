@@ -1,4 +1,7 @@
-
+###########################
+# Author: Vi Dam
+# Version: 2018 05 15
+###########################
 library(e1071) #package for SVM in R
 library(caret)
 library(pROC)
