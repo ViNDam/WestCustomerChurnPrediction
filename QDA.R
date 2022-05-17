@@ -1,3 +1,7 @@
+###########################
+# Author: Vi Dam
+# Version: 2018 05 15
+###########################
 # List of libraries
 library(ISLR)
 library(caTools)
