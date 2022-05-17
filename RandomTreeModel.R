@@ -1,3 +1,8 @@
+###########################
+# Author: Vi Dam
+# Version: 2018 05 15
+###########################
+
 setwd("C:/Users/vdam/Project Data")
 #BAGGING Cleaned Data
 
