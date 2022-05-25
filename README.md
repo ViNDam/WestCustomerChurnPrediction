@@ -9,7 +9,7 @@ This project merge and clean data (with outliers removed),  then QDA, Random For
 ### Missing values after outlier removal
 <img src="outputs/MissingValues.png" width="400" height="400">
 
-### QDA model
+### QDA AUC
 <img src="outputs/QDAModel.png" width="400" height="400">
 
 ### SVM model
