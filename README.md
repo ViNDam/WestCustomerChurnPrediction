@@ -18,5 +18,5 @@ This project merge and clean data (with outliers removed),  then QDA, Random For
 ### Random Forest- Bagging and Boosting best model
 <img src="outputs/BaggingModel.png" width="400" height="400">
 
-### Compare models- Random Forest Chosen
+### Models evaluation - Random Forest was chosen
 <img src="outputs/BestOfModels.png" width="400" height="400">
