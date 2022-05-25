@@ -9,10 +9,10 @@ This project merge and clean data (with outliers removed),  then QDA, Random For
 ### Missing values after outlier removal
 <img src="outputs/MissingValues.png" width="400" height="400">
 
-### QDA best model
+### QDA model
 <img src="outputs/QDAModel.png" width="400" height="400">
 
-### SVM best model
+### SVM model
 <img src="outputs/SVMModel.png" width="400" height="400">
 
 ### Random Forest- Bagging and Boosting best model
