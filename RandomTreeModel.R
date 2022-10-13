@@ -44,8 +44,8 @@ balanced.data <- SMOTE(churned ~., training.set, perc.over = 950, k = 50, perc.u
 as.data.frame(table(balanced.data$churned))
 
 
-#Random Forest model
-rf.project = randomForest(churned ~ ., data = training.set, importance = TRUE, ntree=1000)
+#Random Forest model-------------------------
+rf.project = randomForest(churned ~ ., data = balanced.data, importance = TRUE, ntree=1000)
 
 
 #Prediction
@@ -62,7 +62,7 @@ roc(test.set$churned, rf.prob, plot = TRUE, print.auc = TRUE, legacy.axes = TRUE
 
 
 
-#BOOSTING MODEL
+#BOOSTING MODEL-------------------------
 library(gbm)
 library(DMwR)
 
@@ -104,13 +104,13 @@ test.set = project.gbm[-train,]
 training.set$churned = factor(training.set$churned)
 
 
-#Smote model to increase churned value
+#Smote model to increase churned value-------------------------
 as.data.frame(table(training.set$churned))
 balanced.data <- SMOTE(churned ~., training.set, perc.over = 950, k = 50, perc.under =165)
 
 as.data.frame(table(balanced.data$churned))
 
-#Convert back to charcter after Smote
+#Convert back to character after Smote
 balanced.data$churned = ifelse(balanced.data$churned == 0, "0", "1")
 
 
