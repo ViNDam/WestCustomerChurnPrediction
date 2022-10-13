@@ -1,6 +1,7 @@
 ###########################
 # Author: Vi Dam
 # Version: 2018 05 15
+# This code applies Random Forest, Boosting and Bagging, SVC, QDA, and multiple types of SVM models to predict customer's churn.
 ###########################
 
 # ------------------------ RANDOM FOREST ------------------------
@@ -356,6 +357,3 @@ confusionMatrix(as.factor(pred0.3), test.set$churned, positive = "1")
 # ROC curve -----
 plot(roc(test.set$churned, as.numeric(pred0.3), plot = TRUE, print.auc = TRUE, legacy.axes = TRUE))
 dev.off()
-
-
-
